@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+    <button class="btn btn-outline-success" onclick="bold()" id="a">B</button>
+    <button class="btn btn-outline-success" onclick="italic()" id="b">I</button>
+    <button class="btn btn-outline-success" onclick="inc()" id="b">A+</button>
+    <button class="btn btn-outline-success" onclick="color()" id="clr">Color</button>
+    <button class="btn btn-outline-success" onclick="bg()" id="bg">Bgcolor</button>
+    <button class="btn btn-outline-success" onclick="bor()" id="bor">Border</button>
+    <button class="btn btn-outline-success" onclick="br()" id="br">Border Radius</button>
+    <button class="btn btn-outline-success" onclick="rep()" id="rep">Replace</button>
+    <!-- <img src="" class="reste" id="image">
+    <button class="btn btn-outline-success" onclick="img()">Image</button> -->
+    </div>
+    <br>
+    <textarea id="text"></textarea>
+    
+
+    <script>
+        function bold(){
+            var tex = document.getElementById("text");
+            if (tex.style.fontWeight == "bold"){
+                tex.style.fontWeight = "normal"
+            }else{
+                tex.style.fontWeight = "bold"
+            }
+        }
+
+        function italic(){
+            var tex = document.getElementById("text");
+            if(tex.style.fontStyle == "italic"){
+                tex.style.fontStyle = 'normal';
+            }else{
+                tex.style.fontStyle = "italic"
+            }
+        }
+
+        function inc(){
+            var vel = +prompt("Enter your Size");
+            var tex = document.getElementById("text");
+            tex.style.fontSize = vel +"px";
+        }
+      function color(){
+        var colr =prompt("Enter Favroite Color");
+        var tex = document.getElementById("text");
+        tex.style.color = colr;
+      }
+      function bg(){
+        var bg = prompt('Erter Background Color');
+        var tex = document.getElementById("text");
+        tex.style.background = bg;
+      }
+      function bor(){
+        var num = +prompt("Enter Your Size");
+        // var user = prompt("Enter Your Color");
+        var tex = document.getElementById("text");
+        tex.style.border = num + "px solid gray";
+      }
+     function br(){
+        var user = +prompt("Enter Radius Size");
+        var tex = document.getElementById("text");
+        tex.style.borderRadius = user +"px";
+     }
+
+     function rep(){
+        var user = prompt("Enter Replacing word");
+        var num = prompt("New Word");
+        var tex = document.getElementById("text");
+        var arr = tex.value.replaceAll(user,num);
+        tex.value =arr;
+     }
+    //  function img(){
+    //     var arr = document.createElement('image');
+    //     img.src ='bike.jpg';
+    //  }
+    </script>
+</body>
+</html>

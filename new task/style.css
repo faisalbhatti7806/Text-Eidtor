@@ -1,0 +1,78 @@
+body{
+    background-color: aquamarine;
+    margin: 0;
+    padding: 0;
+}
+.main{
+    margin-top: 80px;
+}
+#a{
+width: 110px;
+height: 60px;
+margin-left: 60px;
+margin-right: 15px;
+border-radius: 25px;
+font-size:26px;
+background-color: blanchedalmond;
+}
+#b{
+    width: 110px;
+    height: 60px;
+    margin-left: 15px;
+    margin-right: 15px;
+    border-radius: 25px;
+    font-size:26px;
+    background-color: blanchedalmond;
+    }
+#clr{
+    background-color: blanchedalmond;
+width: 100px;
+height: 60px;
+margin-left: 15px;
+margin-right: 15px;
+border-radius: 25px;
+font-size: 26px;
+}
+#bg{
+    background-color: blanchedalmond;
+width: 130px;
+height: 60px;
+border-radius: 25px;
+font-size: 26px;
+margin-left: 15px;
+margin-right: 15px;
+}
+#bor{
+    background-color: blanchedalmond;
+width: 120px;
+height: 60px;
+font-size: 26px;
+border-radius: 25px;
+margin-left: 15px;
+margin-right: 15px;
+}
+#br{
+    background-color: blanchedalmond;
+width: 195px;
+height: 60px;
+border-radius: 25px;
+font-size: 26px;
+margin-left: 15px;
+margin-right: 15px;
+}
+#rep{
+    background-color: blanchedalmond;
+    width: 120px;
+    height: 60px;
+    font-size: 26px;
+    border-radius: 25px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+#text{
+    width: 95%;
+    margin-left: 30px;
+    border-radius: 10px;
+    padding-left: 30px;
+    padding-top: 15px;
+}
